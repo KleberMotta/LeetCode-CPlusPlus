@@ -13,40 +13,28 @@ class Solution
 public:
     ListNode *addTwoNumbers(ListNode *l1, ListNode *l2)
     {
-        ListNode *n = nullptr;
         ListNode *head = nullptr;
-        ListNode *tmp = nullptr;
+        ListNode **tmp = &head;
         int curr_sum = 0;
 
         while (l1 != nullptr || l2 != nullptr || curr_sum != 0)
         {
 
-            n = new ListNode();
-
             if (l1 != nullptr)
+            {
                 curr_sum += l1->val;
-            if (l2 != nullptr)
-                curr_sum += l2->val;
-
-            n->val = (curr_sum >= 10) ? curr_sum - 10 : curr_sum;
-
-            if (head == nullptr)
-            {
-                head = n;
-                tmp = n;
-            }
-            else
-            {
-                tmp->next = n;
-                tmp = n;
-            }
-
-            curr_sum = (curr_sum >= 10) ? 1 : 0;
-
-            if (l1 != nullptr)
                 l1 = l1->next;
+            }
+
             if (l2 != nullptr)
+            {
+                curr_sum += l2->val;
                 l2 = l2->next;
+            }
+
+            (*tmp) = new ListNode(curr_sum % 10);
+            curr_sum /= 10;
+            tmp = &((*tmp)->next);
         }
 
         return head;
