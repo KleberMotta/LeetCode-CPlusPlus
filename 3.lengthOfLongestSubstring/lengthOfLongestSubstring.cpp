@@ -7,24 +7,17 @@ class Solution
 public:
     int lengthOfLongestSubstring(string s)
     {
-        map<char, int> aux_map;
-        int first = 0, ans = 0;
+        vector<int> index(128); // Assuming ASCII 128
+        int start = 0, len = 0;
 
         for (int i = 0; i < s.size(); i++)
         {
-            char c = s.at(i);
-            if (aux_map.count(c))
-            {
-                if (aux_map.find(c)->second >= first)
-                {
-                    first = aux_map.find(c)->second + 1;
-                }
-            }
-            ans = max(ans, i - first + 1);
-            aux_map[c] = i;
+            start = max(index[s.at(i)], start);
+            len = max(len, i - start + 1);
+            index[s.at(i)] = i + 1;
         }
 
-        return ans;
+        return len;
     }
 };
 
