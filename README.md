@@ -18,10 +18,12 @@ C++ was the first programming language that I had contact with, back in 2014. Th
 
 
 ## Algorithms
-| #   | Title                                                             | Difficulty | Tag         | My Solution                                                                                                            |
-| --- | ----------------------------------------------------------------- | ---------- | ----------- | ---------------------------------------------------------------------------------------------------------------------- |
-| 1   | [Two Sum](https://leetcode.com/problems/two-sum)                  | Easy       | Array       | [twoSum.cpp](https://github.com/KleberMotta/LeetCode-CPlusPlus/blob/master/1.Two-Sum/twoSum.cpp)                       |
-| 2   | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | Medium     | Linked List | [AddTwoNumbers.cpp](https://github.com/KleberMotta/LeetCode-CPlusPlus/blob/master/2.Add-Two-Numbers/AddTwoNumbers.cpp) |
+| #   | Title                                                                                                         | Difficulty | Tag         | My Solution                                                                                                                                           |
+| --- | ------------------------------------------------------------------------------------------------------------- | ---------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | [Two Sum](https://leetcode.com/problems/two-sum)                                                              | Easy       | Array       | [twoSum.cpp](https://github.com/KleberMotta/LeetCode-CPlusPlus/blob/master/1.Two-Sum/twoSum.cpp)                                                      |
+| 2   | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)                                             | Medium     | Linked List | [AddTwoNumbers.cpp](https://github.com/KleberMotta/LeetCode-CPlusPlus/blob/master/2.Add-Two-Numbers/AddTwoNumbers.cpp)                                |
+| 3   | [Length Of Longest Substring ](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium     | String      | [lengthOfLongestSubstring.cpp](https://github.com/KleberMotta/LeetCode-CPlusPlus/blob/master/3.lengthOfLongestSubstring/lengthOfLongestSubstring.cpp) |
+
 
 
 ## Contribution
